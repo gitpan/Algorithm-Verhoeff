@@ -26,7 +26,7 @@ our @EXPORT = qw(
     verhoeff_get verhoeff_check
 );
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 
 # Preloaded methods go here.
@@ -114,11 +114,11 @@ check digits
   my $long_number = 1456789;
   # add a check digit to that to catch typos!
   
-  $long_number .= verhoeff_get($long_number);
-  print $long_number; #prints 4567894
+  $long_number .= verhoeff_get($long_number); # note - append don't add!
+  print $long_number; #prints 14567894
   
   # Lets see if I can re-type that accurately
-  my $test = '4657894'; # oops!
+  my $test = '14657894'; # oops!
   unless (verhoeff_check($test))
   {
     print "Failed check - typo?";
@@ -177,7 +177,7 @@ begin with, or use the bignum module in your program.
 Thus:
 
     my $num = 57382957482395748329574923; # Big number!
-    verhoeff_get($num); #Fatal error unless program uses bignum module.
+    verhoeff_get($num); # Fatal error unless program uses bignum module.
 
 But:
 

@@ -4,7 +4,7 @@ Algorithm-Verhoeff version 0.1
 DESCRIPTION
 
 This module implements Verhoeff's check digit algorithm. It provides a method to
-generate check digits from numbers, and a method to verify if an exist number
+generate check digits from numbers, and a method to verify if an existing number
 passes the check.
 
 Using numbers that pass the verhoeff check is useful for things like product
@@ -18,8 +18,7 @@ it's a good algorithm for use where humans need to enter or read the numbers.
 To generate such a number, pick a starting number, call verhoeff_check() to get
 a check digit, and then APPEND that digit to the end of the original number.
 
-The new number will how pass the verhoeff_check(). For common forms of typo such
-as ommitted digits, accuracy is over 99%.
+The new number will how pass the verhoeff_check(). 
 
 
 INSTALLATION
