@@ -1,6 +1,6 @@
 package Algorithm::Verhoeff;
 
-use 5.008004;
+use 5.0;
 use strict;
 use warnings;
 #use bignum; # Needed so large numbers don't get turned into standard form
@@ -26,7 +26,7 @@ our @EXPORT = qw(
     verhoeff_get verhoeff_check
 );
 
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 
 
 # Preloaded methods go here.
